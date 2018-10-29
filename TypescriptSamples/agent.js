@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function printAgent(agent) {
     console.log(agent.name.toUpperCase());
 }

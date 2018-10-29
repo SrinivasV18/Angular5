@@ -1,4 +1,4 @@
-interface Agent {
+export interface Agent {
     id: number;
     name: string;
     mobileNumber: number;
