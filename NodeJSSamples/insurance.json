@@ -2,37 +2,37 @@
     "lifeInsurance": [
         {
             "id": 101,
-            "policyHoldeName": "Ramesh",
+            "policyHolderName": "Ramesh",
             "policyAmount": 23500
         },
         {
             "id": 102,
-            "policyHoldeName": "Venki",
+            "policyHolderName": "Venki",
             "policyAmount": 86767
         },
         {
             "id": 103,
-            "policyHoldeName": "Krish",
+            "policyHolderName": "Krish",
             "policyAmount": 65656
         },
         {
             "id": 104,
-            "policyHoldeName": "Surya",
+            "policyHolderName": "Surya",
             "policyAmount": 56565
         },
         {
             "id": 105,
-            "policyHoldeName": "Sai",
+            "policyHolderName": "Sai",
             "policyAmount": 234552
         },
         {
             "id": 106,
-            "policyHoldeName": "Vidh",
+            "policyHolderName": "Vidh",
             "policyAmount": 54545
         },
         {
             "id": 107,
-            "policyHoldeName": "Janath",
+            "policyHolderName": "Janath",
             "policyAmount": 343434
         }
     ]
