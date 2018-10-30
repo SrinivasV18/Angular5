@@ -2,12 +2,14 @@
 <h1> Plan Details</h1>
 <table class="table table-stripped">
   <tr>
+    <th></th>
     <th>Price</th>
     <th>Validity</th>
     <th>Voice</th>
     <th>Data</th>
   </tr>
   <tr *ngFor='let plan of plansList'>
+      <td><button (click)="selectedplan(plan)">Select</button></td>
     <td>{{plan.price}}</td>
     <td>{{plan.validity}}</td>
     <td>{{plan.voice}}</td>
@@ -15,5 +17,5 @@
   </tr>
 </table>
 </div>
-
+<app-show-quote></app-show-quote>
 <router-outlet></router-outlet>

@@ -18,4 +18,8 @@ export class AppComponent {
   ngOnInit() {
     this.mobileService.findAllPlans().subscribe(data=> this.plansList=data,err=>console.log(err));
   }
+  selectedplan(plan : any){
+    console.log(plan);
+    alert('Selected Plan - ' + plan.price);
+  }
 }
