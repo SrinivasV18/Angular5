@@ -1,0 +1,16 @@
+{
+    "pricePlans": [
+        {
+            "price": 199,
+            "validity": "28 days",
+            "voice": "unlimited",
+            "data": "2gb per day"
+        },
+        {
+            "price": 299,
+            "validity": "28 days",
+            "voice": "unlimited",
+            "data": "3gb per day"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+<div class="pgColor">
+<h1> Plan Details</h1>
+<table class="table table-stripped">
+  <tr>
+    <th>Price</th>
+    <th>Validity</th>
+    <th>Voice</th>
+    <th>Data</th>
+  </tr>
+  <tr *ngFor='let plan of plansList'>
+    <td>{{plan.price}}</td>
+    <td>{{plan.validity}}</td>
+    <td>{{plan.voice}}</td>
+    <td>{{plan.data}}</td>
+  </tr>
+</table>
+</div>
+
+<router-outlet></router-outlet>
