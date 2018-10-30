@@ -1,0 +1,20 @@
+<div class="card-group">
+  <div *ngFor='let policy of listPolicies' class='card'>
+    <h5 class="card-header">
+      {{policy.policyName}}
+    </h5>
+    <div class="card-body">
+      <p class="card-text">
+        Policy Name: {{policy.policyName}}
+      </p>
+      <p class="card-text">
+        Policy Description: {{policy.policyDescription}}
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary">
+        More Info
+      </button>
+    </div>
+  </div>
+</div>
