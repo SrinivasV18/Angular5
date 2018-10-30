@@ -35,5 +35,14 @@
             "policyHolderName": "Janath",
             "policyAmount": 343434
         }
+    ],
+    "advisors":[
+        {"id":201, "name":"kumar","mobileNumber": 9878456565},
+        {"id":202, "name":"Shiva","mobileNumber": 5646545665},
+        {"id":203, "name":"Venkat","mobileNumber": 123232323},
+        {"id":204, "name":"Rohit","mobileNumber": 665656434},
+        {"id":205, "name":"Arjun","mobileNumber": 545454545},
+        {"id":206, "name":"Bala","mobileNumber": 4545456565}
+
     ]
 }
