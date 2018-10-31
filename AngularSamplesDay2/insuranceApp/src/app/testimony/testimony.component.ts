@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Testimony } from '../models/testimony';
 
 @Component({
   selector: 'app-testimony',
@@ -14,8 +15,9 @@ export class TestimonyComponent implements OnInit {
   getRetailCustomerFeedBack(): string {
     return 'Claims processing is prompt and received the payment on time...';
   }
-  getCorpCustomerFeedBack(): string {
-    return 'Door step service by the advisors is very much appreciated...';
+  getCorpCustomerFeedBack(): Testimony {
+    return {id:101, name:'Nice Work....'};
+    //return 'Door step service by the advisors is very much appreciated...';
   }
 
 }

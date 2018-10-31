@@ -13,6 +13,8 @@ import {MenuComponent} from './menu/menu.component';
 import { SearchBranchComponent } from './search-branch/search-branch.component';
 import { ShowBranchComponent } from './show-branch/show-branch.component';
 import { TestimonyComponent } from './testimony/testimony.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { TestimonyComponent } from './testimony/testimony.component';
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent, TestimonyComponent
+    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent, TestimonyComponent, LoginComponent, LogoutComponent
   ],
   imports: [
     BrowserModule, FormsModule,

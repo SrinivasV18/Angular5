@@ -1,11 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div>
-  <div  style="height:150px"><app-header></app-header></div>
-  <div class="pgColor" style="height:600px"><app-content></app-content><app-show-advisors></app-show-advisors></div>
-  <div  style="height:150px"><app-footer></app-footer></div>
-</div>
-<div>
-  <app-search-branch></app-search-branch>
-</div>
+
+<div  style="height:150px"><app-header></app-header></div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Insurance Application</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <p class="lead">
+        <app-content></app-content><app-show-advisors></app-show-advisors>
+         <app-search-branch></app-search-branch>
+  </div>
+
+</main><!-- /.container -->
+<div  style="height:150px"><app-footer></app-footer></div>
+<app-login></app-login>
+<app-logout></app-logout>
 <router-outlet></router-outlet>
