@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { ShowAdvisorsComponent } from './show-advisors/show-advisors.component';
 import {MenuComponent} from './menu/menu.component';
+import { SearchBranchComponent } from './search-branch/search-branch.component';
+import { ShowBranchComponent } from './show-branch/show-branch.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +19,10 @@ import {MenuComponent} from './menu/menu.component';
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    ShowAdvisorsComponent, MenuComponent
+    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, FormsModule,
     AppRoutingModule, HttpClientModule
   ],
   providers: [HttpClient],

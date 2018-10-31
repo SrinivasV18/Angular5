@@ -1,0 +1,14 @@
+<p>
+  Search from our branches...
+</p>
+<div class='form-group'>
+<span>City Name</span>
+<input [(ngModel)]='searchCity' class='form-control'>
+</div>
+<app-show-branch [cityName]='searchCity' (branches)="onChange($event)"></app-show-branch>
+
+<ol>
+  <li *ngFor='let branch of branchList'>
+    {{branch}}
+  </li>
+</ol>
