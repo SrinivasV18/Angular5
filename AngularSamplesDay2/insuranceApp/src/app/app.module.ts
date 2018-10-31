@@ -15,6 +15,7 @@ import { ShowBranchComponent } from './show-branch/show-branch.component';
 import { TestimonyComponent } from './testimony/testimony.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { HighLightDirective } from './high-light.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { LogoutComponent } from './logout/logout.component';
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent, TestimonyComponent, LoginComponent, LogoutComponent
+    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent, TestimonyComponent, LoginComponent, LogoutComponent, HighLightDirective
   ],
   imports: [
     BrowserModule, FormsModule,

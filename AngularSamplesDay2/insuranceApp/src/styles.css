@@ -2,5 +2,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
 .pgColor {
-    background-image: linear-gradient(rgb(154, 154, 236), rgb(231, 223, 173));
+    background-image: linear-gradient(rgb(220, 220, 231), rgb(221, 218, 199));
+}
+.rotate{
+  transform: rotate3d(1, 1, 1, 30deg);
 }
