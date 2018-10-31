@@ -16,6 +16,7 @@ import { TestimonyComponent } from './testimony/testimony.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HighLightDirective } from './high-light.directive';
+import { AddelementDirective } from './addelement.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { HighLightDirective } from './high-light.directive';
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent, TestimonyComponent, LoginComponent, LogoutComponent, HighLightDirective
+    ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent,
+    TestimonyComponent, LoginComponent, LogoutComponent, HighLightDirective,
+    AddelementDirective
   ],
   imports: [
     BrowserModule, FormsModule,
