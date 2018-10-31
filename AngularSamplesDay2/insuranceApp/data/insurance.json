@@ -1,0 +1,48 @@
+{
+    "lifeInsurance": [
+        {
+            "id": 101,
+            "policyHolderName": "Ramesh",
+            "policyAmount": 23500
+        },
+        {
+            "id": 102,
+            "policyHolderName": "Venki",
+            "policyAmount": 86767
+        },
+        {
+            "id": 103,
+            "policyHolderName": "Krish",
+            "policyAmount": 65656
+        },
+        {
+            "id": 104,
+            "policyHolderName": "Surya",
+            "policyAmount": 56565
+        },
+        {
+            "id": 105,
+            "policyHolderName": "Sai",
+            "policyAmount": 234552
+        },
+        {
+            "id": 106,
+            "policyHolderName": "Vidh",
+            "policyAmount": 54545
+        },
+        {
+            "id": 107,
+            "policyHolderName": "Janath",
+            "policyAmount": 343434
+        }
+    ],
+    "advisors":[
+        {"id":201, "name":"kumar","mobileNumber": 9878456565},
+        {"id":202, "name":"Shiva","mobileNumber": 5646545665},
+        {"id":203, "name":"Venkat","mobileNumber": 123232323},
+        {"id":204, "name":"Rohit","mobileNumber": 665656434},
+        {"id":205, "name":"Arjun","mobileNumber": 545454545},
+        {"id":206, "name":"Bala","mobileNumber": 4545456565}
+
+    ]
+}
