@@ -9,9 +9,12 @@ export class ShowBranchComponent implements OnInit {
   @Input() cityName: string;
   @Output() branches: EventEmitter<string[]> = new EventEmitter<string[]>();
 
-  constructor() { }
+  constructor() {
+    console.log(`In Constructor - ${this.cityName}`);
+   }
 
   ngOnInit() {
+    console.log(`In Init - ${this.cityName}`);
   }
   sendBranches() {
     if (this.cityName === 'hyd') {
