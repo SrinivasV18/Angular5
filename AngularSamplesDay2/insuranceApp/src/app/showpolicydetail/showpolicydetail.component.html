@@ -9,10 +9,12 @@
     <th> Policy Amount </th>
     <th> Maturity Date </th>
   </tr>
-  <tr *ngFor="let policy of policyList | filterPipe:'policyHolderName': srcName">
+  <tr *ngFor="let policy of policyList | filterPipe:'policyHolderName': srcName | 
+    paginate:{itemsPerPage:2, currentPage:page}">
     <td> {{policy.id}}</td>
     <td> {{policy.policyHolderName | uppercase}}</td>
     <td> {{policy.policyAmount | currency:'INR':'symbol'}}</td>
     <td> {{policy.maturityDate | date : 'short'}}</td>
   </tr>
 </table>
+<pagination-controls  (pageChange)='page=$event'></pagination-controls>

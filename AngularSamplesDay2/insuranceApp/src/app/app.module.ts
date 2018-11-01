@@ -20,6 +20,7 @@ import { AddelementDirective } from './addelement.directive';
 import { ShowLocationComponent } from './show-location/show-location.component';
 import { ShowpolicydetailComponent } from './showpolicydetail/showpolicydetail.component';
 import { FilterPipePipe } from './filter-pipe.pipe';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { FilterPipePipe } from './filter-pipe.pipe';
   ],
   imports: [
     BrowserModule, FormsModule,
-    AppRoutingModule, HttpClientModule
+    AppRoutingModule, HttpClientModule, NgxPaginationModule
   ],
   providers: [HttpClient],
   entryComponents:[ShowLocationComponent],
