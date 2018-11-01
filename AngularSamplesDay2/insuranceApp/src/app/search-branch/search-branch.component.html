@@ -2,10 +2,12 @@
   Search from our branches...
 </p>
 <div class='form-group'>
-<span>City Name</span>
-<input [(ngModel)]='searchCity' class='form-control'>
+<span>City Name</span><br>
+<ng-template #locationInfo></ng-template>
+<input [(ngModel)]='searchCity' class='form-control' (focus)='add()' (blur)='remove()'>
+
 </div>
-<app-show-branch [cityName]='searchCity' (branches)="onChange($event)"></app-show-branch>
+<app-show-branch [cityName]='searchCity' (branches)="onChange($event)" ></app-show-branch>
 
 <ol>
   <li *ngFor='let branch of branchList'>

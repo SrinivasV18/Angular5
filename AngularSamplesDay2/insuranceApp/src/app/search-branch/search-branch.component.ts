@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { DynamicComponentAdderService } from '../dynamic-component-adder.service';
+import { ShowLocationComponent } from '../show-location/show-location.component';
 
 @Component({
   selector: 'app-search-branch',
@@ -8,12 +10,20 @@ import { Component, OnInit } from '@angular/core';
 export class SearchBranchComponent implements OnInit {
   searchCity: string;
   branchList: string[];
-
-  constructor() { }
+  @ViewChild('locationInfo', { read: ViewContainerRef }) viewRef: ViewContainerRef;
+  constructor(private service: DynamicComponentAdderService) { }
 
   ngOnInit() {
   }
   onChange(val) {
     this.branchList = val;
+  }
+  add() {
+    this.service.setViewRef(this.viewRef);
+    this.service.addComponent(ShowLocationComponent);
+  }
+
+  remove() {
+    this.viewRef.detach();
   }
 }

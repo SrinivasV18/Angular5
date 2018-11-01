@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HighLightDirective } from './high-light.directive';
 import { AddelementDirective } from './addelement.directive';
+import { ShowLocationComponent } from './show-location/show-location.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,15 @@ import { AddelementDirective } from './addelement.directive';
     ContentComponent,
     ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent,
     TestimonyComponent, LoginComponent, LogoutComponent, HighLightDirective,
-    AddelementDirective
+    AddelementDirective,
+    ShowLocationComponent
   ],
   imports: [
     BrowserModule, FormsModule,
     AppRoutingModule, HttpClientModule
   ],
   providers: [HttpClient],
+  entryComponents:[ShowLocationComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
