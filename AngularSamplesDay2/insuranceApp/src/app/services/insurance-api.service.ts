@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { InsuranceAdvisor } from '../models/insurance-advisor';
+import { PolicyDetail } from '../policy-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +14,9 @@ baseUrl = 'http://localhost:3000/';
    findAllAdvisors():Observable<InsuranceAdvisor[]>{
     const advisorUrl = `${this.baseUrl}advisors`;
         return this.http.get<InsuranceAdvisor[]>(advisorUrl);
+  }
+  findPolicy():Observable<PolicyDetail[]>{
+    const lifeInsuranceUrl = `${this.baseUrl}lifeInsurance`;
+        return this.http.get<PolicyDetail[]>(lifeInsuranceUrl);
   }
 }

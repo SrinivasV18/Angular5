@@ -3,37 +3,44 @@
         {
             "id": 101,
             "policyHolderName": "Ramesh",
-            "policyAmount": 23500
+            "policyAmount": 23500,
+            "maturityDate": "2025-11-02"
         },
         {
             "id": 102,
             "policyHolderName": "Venki",
-            "policyAmount": 86767
+            "policyAmount": 86767,
+            "maturityDate": "2001-11-02"
         },
         {
             "id": 103,
             "policyHolderName": "Krish",
-            "policyAmount": 65656
+            "policyAmount": 65656,
+            "maturityDate": "2004-8-3"
         },
         {
             "id": 104,
             "policyHolderName": "Surya",
-            "policyAmount": 56565
+            "policyAmount": 56565,
+            "maturityDate": "2015-11-1"
         },
         {
             "id": 105,
             "policyHolderName": "Sai",
-            "policyAmount": 234552
+            "policyAmount": 234552,
+            "maturityDate": "2009-1-4"
         },
         {
             "id": 106,
             "policyHolderName": "Vidh",
-            "policyAmount": 54545
+            "policyAmount": 54545,
+            "maturityDate": "2025-08-02"
         },
         {
             "id": 107,
             "policyHolderName": "Janath",
-            "policyAmount": 343434
+            "policyAmount": 343434,
+            "maturityDate": "2012-11-02"
         }
     ],
     "advisors":[

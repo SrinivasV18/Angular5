@@ -18,6 +18,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { HighLightDirective } from './high-light.directive';
 import { AddelementDirective } from './addelement.directive';
 import { ShowLocationComponent } from './show-location/show-location.component';
+import { ShowpolicydetailComponent } from './showpolicydetail/showpolicydetail.component';
+import { FilterPipePipe } from './filter-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ShowLocationComponent } from './show-location/show-location.component';
     ShowAdvisorsComponent, MenuComponent, SearchBranchComponent, ShowBranchComponent,
     TestimonyComponent, LoginComponent, LogoutComponent, HighLightDirective,
     AddelementDirective,
-    ShowLocationComponent
+    ShowLocationComponent,
+    ShowpolicydetailComponent,
+    FilterPipePipe
   ],
   imports: [
     BrowserModule, FormsModule,
