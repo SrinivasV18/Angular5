@@ -1,11 +1,11 @@
 <div class="border col-md-4" *ngIf="toggleForm">
-<form #f='ngForm' (ngSubmit)='submit(f.value)' >
+<form #f='ngForm' (ngSubmit)='submit(f.value)' ngNativeValidate >
   <div class="form-group"><label for="id">Id</label>
     <input name="id" type="text" [(ngModel)]='policyData.id' class='form-control'>
   </div>
   <div class="form-group">
     <label for="policyHolderName">Policy Holder Name</label>
-    <input name="policyHolderName" type="text" [(ngModel)]='policyData.policyHolderName' class='form-control'></div>
+    <input name="policyHolderName" type="text" [(ngModel)]='policyData.policyHolderName' class='form-control' required></div>
     <div class="form-group"> 
         <label for="policyAmount">Policy Amount</label>
         <input type="text" name="policyAmount" [(ngModel)]='policyData.policyAmount' class='form-control'></div>

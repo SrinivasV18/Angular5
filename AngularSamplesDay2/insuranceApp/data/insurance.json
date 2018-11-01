@@ -35,6 +35,12 @@
       "policyHolderName": "Vidh",
       "policyAmount": 54545,
       "maturityDate": "2025-08-02"
+    },
+    {
+      "id": "654",
+      "policyHolderName": "",
+      "policyAmount": "3454",
+      "maturityDate": "2018-11-06"
     }
   ],
   "advisors": [
