@@ -1,13 +1,34 @@
+<div class="border col-md-4" *ngIf="toggleForm">
+<form #f='ngForm' (ngSubmit)='submit(f.value)' >
+  <div class="form-group"><label for="id">Id</label>
+    <input name="id" type="text" [(ngModel)]='policyData.id' class='form-control'>
+  </div>
+  <div class="form-group">
+    <label for="policyHolderName">Policy Holder Name</label>
+    <input name="policyHolderName" type="text" [(ngModel)]='policyData.policyHolderName' class='form-control'></div>
+    <div class="form-group"> 
+        <label for="policyAmount">Policy Amount</label>
+        <input type="text" name="policyAmount" [(ngModel)]='policyData.policyAmount' class='form-control'></div>
+  <div class="form-group">
+    <label for="maturityDate">Maturity Date</label>
+    <input type="date" name="maturityDate" [(ngModel)]='policyData.maturityDate' class='form-control'></div>
+    <div class="form-group">
+        <input type="submit" [value]='buttonText'  class="btn btn-danger"></div>
+</form>
+</div>
 <table class="table table-sm small">
   <tr>
     <td><label>Enter the policy holder name</label></td>
     <td><input [(ngModel)]='srcName'></td>
+    <td><button (click)="showForm()"  [ngClass]="{'fa':true,'fa-arrow-circle-up':showUp,'fa-arrow-circle-down':showDown}"></button></td>
   </tr>
   <tr>
     <th> ID </th>
     <th> Policy Holder Name </th>
     <th> Policy Amount </th>
     <th> Maturity Date </th>
+    <th></th>
+    <th></th>
   </tr>
   <tr *ngFor="let policy of policyList | filterPipe:'policyHolderName': srcName | 
     paginate:{itemsPerPage:2, currentPage:page}">
@@ -15,6 +36,9 @@
     <td> {{policy.policyHolderName | uppercase}}</td>
     <td> {{policy.policyAmount | currency:'INR':'symbol'}}</td>
     <td> {{policy.maturityDate | date : 'short'}}</td>
+    <td><i class='fa fa-2x fa-edit' (click)='update(policy)'></i></td>
+    <td><i class='fa fa-2x fa-remove' (click)='remove(policy)'></i></td>
+
   </tr>
 </table>
-<pagination-controls  (pageChange)='page=$event'></pagination-controls>
+<pagination-controls (pageChange)='page=$event'></pagination-controls>

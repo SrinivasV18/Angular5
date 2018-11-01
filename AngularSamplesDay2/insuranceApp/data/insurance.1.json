@@ -8,7 +8,7 @@
     },
     {
       "id": 102,
-      "policyHolderName": "Venki Nivas",
+      "policyHolderName": "Venki",
       "policyAmount": 86767,
       "maturityDate": "2001-11-02"
     },
@@ -35,6 +35,12 @@
       "policyHolderName": "Vidh",
       "policyAmount": 54545,
       "maturityDate": "2025-08-02"
+    },
+    {
+      "id": "107",
+      "policyHolderName": "Nivas Ali",
+      "policyAmount": "34545",
+      "maturityDate": "2018-11-10"
     }
   ],
   "advisors": [
