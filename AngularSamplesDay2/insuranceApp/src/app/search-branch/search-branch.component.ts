@@ -12,7 +12,6 @@ export class SearchBranchComponent implements OnInit {
   branchList: string[];
   @ViewChild('locationInfo', { read: ViewContainerRef }) viewRef: ViewContainerRef;
   constructor(private service: DynamicComponentAdderService) { }
-
   ngOnInit() {
   }
   onChange(val) {
@@ -20,10 +19,17 @@ export class SearchBranchComponent implements OnInit {
   }
   add() {
     this.service.setViewRef(this.viewRef);
-    this.service.addComponent(ShowLocationComponent);
+    const comp =  this.service.addComponent(ShowLocationComponent);
+    const locationComp = (<ShowLocationComponent>comp.instance);
+    locationComp.selectedLocation.subscribe(value => {
+      this.searchCity = value; 
+      value.length > 0 ? this.remove() : '';
+     });
   }
 
   remove() {
     this.viewRef.detach();
   }
+
+  
 }

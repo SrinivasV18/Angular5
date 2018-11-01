@@ -4,8 +4,8 @@
 <div class='form-group'>
 <span>City Name</span><br>
 <ng-template #locationInfo></ng-template>
-<input [(ngModel)]='searchCity' class='form-control' (focus)='add()' (blur)='remove()'>
-
+<input [(ngModel)]='searchCity' class='form-control' (focus)='add()' >
+<input id="policy" value={{searchCity}} class='form-control'>
 </div>
 <app-show-branch [cityName]='searchCity' (branches)="onChange($event)" ></app-show-branch>
 

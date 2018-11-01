@@ -14,9 +14,10 @@ export class DynamicComponentAdderService {
   }
 
   //What to Add
-  addComponent(compToAdd: any): void {
+  addComponent(compToAdd: any): any {
     const factory = this.resolver.resolveComponentFactory(compToAdd);
     const compRef = factory.create(this.viewRef.parentInjector);
     this.viewRef.insert(compRef.hostView);
+    return compRef;
   }
 }
