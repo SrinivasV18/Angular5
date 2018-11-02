@@ -10,7 +10,7 @@ export class HighLightDirective {
   @HostListener('mouseover') over() {
     this.renderer.setStyle(this.el.nativeElement, 'font-size', '1.3em');
     this.renderer.addClass(this.el.nativeElement, 'rotate');
-    console.log('over called....');
+    //console.log('over called....');
     console.log(this.el.nativeElement);
   }
 
