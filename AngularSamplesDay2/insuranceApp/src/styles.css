@@ -1,9 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
-.pgColor {
-    background-image: linear-gradient(rgb(220, 220, 231), rgb(221, 218, 199));
-}
-.rotate{
-  transform: rotate3d(1, 1, 1, 30deg);
-}
+@import "~assets/myStyles1.css";
+@import "~assets/myStyles2.css";
+
+
