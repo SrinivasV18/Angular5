@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
     this.logo = 'assets/images/logo.png';
     this.linkText = 'Login';
     this.links = [
+      { linkText: 'Login', linkRef: 'login', linkStyle: 'nav-link' },
     { linkText: 'Products', linkRef: 'products', linkStyle: 'nav-link' },
     { linkText: 'History', linkRef: 'history', linkStyle: 'nav-link' },
     { linkText: 'Branches', linkRef: 'branches', linkStyle: 'nav-link' },

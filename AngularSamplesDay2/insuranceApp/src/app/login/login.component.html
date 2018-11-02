@@ -6,6 +6,7 @@
     </div>
 </ng-container>
 <div *ngIf='loginForm.invalid && (loginForm.dirty || loginForm.touched)'>UserName or Password is required..</div>
+<div><span>{{errorMessage}}</span></div>
 <input type="submit" value="Signin" class='btn btn-info'>
 </form>
 

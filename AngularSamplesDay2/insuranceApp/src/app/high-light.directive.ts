@@ -16,7 +16,7 @@ export class HighLightDirective {
 
   @HostListener('mouseout') out() {
     this.renderer.removeClass(this.el.nativeElement, 'rotate');
-    console.log('out called...');
+    //console.log('out called...');
     console.log(this.el.nativeElement);
   }
 
