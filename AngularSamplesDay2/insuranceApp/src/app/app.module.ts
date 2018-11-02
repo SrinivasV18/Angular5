@@ -23,6 +23,8 @@ import { FilterPipePipe } from './filter-pipe.pipe';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
 import { DetailsComponent } from './details/details.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { DetailsComponent } from './details/details.component';
     ShowpolicydetailComponent,
     FilterPipePipe,
     ShowHealthPolicyComponent,
-    DetailsComponent
+    DetailsComponent,
+    LifecycleComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule, FormsModule,
@@ -45,6 +49,7 @@ import { DetailsComponent } from './details/details.component';
   ],
   providers: [HttpClient],
   entryComponents:[ShowLocationComponent],
-  bootstrap: [AppComponent]
+  //bootstrap: [AppComponent, LifecycleComponent]
+  bootstrap: [ LifecycleComponent]
 })
 export class AppModule { }
