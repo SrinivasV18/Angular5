@@ -13,6 +13,7 @@ export class ShowpolicydetailComponent implements OnInit {
   toggleForm = false;
   showUp = true;
   showDown = false;
+  page : number;
   policyData: PolicyDetail = {
     id: 0,
     policyHolderName: '',
