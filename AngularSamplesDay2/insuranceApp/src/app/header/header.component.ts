@@ -17,11 +17,15 @@ export class HeaderComponent implements OnInit {
     this.majHeading = 'Life Save Insurance';
     this.logo = 'assets/images/logo.png';
     this.linkText = 'Login';
-    this.links = [{ linkText: 'Home', linkRef: 'home', linkStyle: 'nav-link' },
+    this.links = [
     { linkText: 'Products', linkRef: 'products', linkStyle: 'nav-link' },
-    { linkText: 'History', linkRef: 'history', linkStyle: 'nav-link' }]
+    { linkText: 'History', linkRef: 'history', linkStyle: 'nav-link' },
+    { linkText: 'Branches', linkRef: 'branches', linkStyle: 'nav-link' },
+    { linkText: 'Location', linkRef: 'location', linkStyle: 'nav-link' },
+    { linkText: 'Advisors', linkRef: 'advisors', linkStyle: 'nav-link' },
+    { linkText: 'Logout', linkRef: 'logout', linkStyle: 'nav-link' }
+  ]
   }
   ngOnInit() {
   }
-
 }
