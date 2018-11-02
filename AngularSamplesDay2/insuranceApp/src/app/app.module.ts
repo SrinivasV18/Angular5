@@ -21,6 +21,8 @@ import { ShowLocationComponent } from './show-location/show-location.component';
 import { ShowpolicydetailComponent } from './showpolicydetail/showpolicydetail.component';
 import { FilterPipePipe } from './filter-pipe.pipe';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import {NgxPaginationModule} from 'ngx-pagination';
     AddelementDirective,
     ShowLocationComponent,
     ShowpolicydetailComponent,
-    FilterPipePipe
+    FilterPipePipe,
+    ShowHealthPolicyComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule, FormsModule,

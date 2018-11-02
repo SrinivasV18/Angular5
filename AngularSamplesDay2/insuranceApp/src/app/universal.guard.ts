@@ -13,7 +13,7 @@ export class UniversalGuard implements CanActivate, CanDeactivate<LogoutComponen
     
     let result = window.confirm('Are you sure...');
     if(!result){
-      //this.router.navigate(['/products']);
+      //this.router.navigate(['/policies']);
       result = true;
     }
     return result;

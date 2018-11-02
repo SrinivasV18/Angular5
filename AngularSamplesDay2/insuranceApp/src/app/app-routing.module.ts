@@ -8,13 +8,18 @@ import { ShowAdvisorsComponent } from './show-advisors/show-advisors.component';
 import { ShowLocationComponent } from './show-location/show-location.component';
 import { ShowpolicydetailComponent } from './showpolicydetail/showpolicydetail.component';
 import { UniversalGuard } from './universal.guard';
+import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
+import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'login/:msg', component: LoginComponent },
   { path: 'products', component: ContentComponent },
-  { path: 'history', component: ShowpolicydetailComponent, canActivate:[UniversalGuard] },
+  { path: 'policies', component: DetailsComponent , canActivate:[UniversalGuard],
+    children:[
+      { path:'health', component:ShowHealthPolicyComponent, outlet:'health'},
+      { path:'life', component:ShowpolicydetailComponent, outlet:'life'}] },
   { path: 'advisors', component: ShowAdvisorsComponent },
   { path: 'location', component: ShowLocationComponent },
   { path: 'branches', component: SearchBranchComponent },

@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     this.links = [
       { linkText: 'Login', linkRef: 'login', linkStyle: 'nav-link' },
     { linkText: 'Products', linkRef: 'products', linkStyle: 'nav-link' },
-    { linkText: 'History', linkRef: 'history', linkStyle: 'nav-link' },
+    { linkText: 'Policies', linkRef: 'policies', linkStyle: 'nav-link' },
     { linkText: 'Branches', linkRef: 'branches', linkStyle: 'nav-link' },
     { linkText: 'Location', linkRef: 'location', linkStyle: 'nav-link' },
     { linkText: 'Advisors', linkRef: 'advisors', linkStyle: 'nav-link' },
