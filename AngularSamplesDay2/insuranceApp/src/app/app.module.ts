@@ -49,7 +49,7 @@ import { ChildComponent } from './child/child.component';
   ],
   providers: [HttpClient],
   entryComponents:[ShowLocationComponent],
-  //bootstrap: [AppComponent, LifecycleComponent]
-  bootstrap: [ LifecycleComponent]
+  bootstrap: [AppComponent]
+  //bootstrap: [ LifecycleComponent]
 })
 export class AppModule { }

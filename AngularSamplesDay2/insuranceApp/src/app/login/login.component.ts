@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
     const pwd = this.loginForm.controls.passWord.value;
     if(uname ==='india' && pwd === 'india') {
       sessionStorage.setItem('logged', 'true');
-      this.router.navigate(['history']);
+      this.router.navigate(['policies']);
     }
     else{
       this.errorMessage ='Invalid User Name or password - Try Again';
